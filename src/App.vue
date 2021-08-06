@@ -1,10 +1,38 @@
-<template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+<script>
+import Sidebar from "@/components/sidebar/Sidebar";
+import {sidebarWidth} from "@/components/sidebar/state";
+
+export default {
+  components: { Sidebar },
+  setup() {
+    return { sidebarWidth }
+  },
+
+
+
+};
+</script>
+
+<template >
+  <Sidebar />
+    <div>
+      <router-view />
+    </div>
+
+
+
 </template>
+
+
+<style>
+:root{
+  background-color: rgba(255, 160, 122,0.4);
+  
+}
+</style>
+
+
+
 
 <style>
 #app {
@@ -26,5 +54,11 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.isCollapsed{
+  filter: blur(4px);
+
+
 }
 </style>
