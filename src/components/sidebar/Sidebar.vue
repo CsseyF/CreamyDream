@@ -24,7 +24,7 @@ export default {
     <br />
     <SidebarLink to="/analytics" icon="fas fa-fire-alt">⠀Daily specials</SidebarLink>
     <br />
-    <SidebarLink to="/friends" icon="fas fa-users">⠀Friends</SidebarLink>
+    <SidebarLink to="/about" icon="fas fa-users">⠀About us</SidebarLink>
     <br />
     <SidebarLink to="/image" icon="fas fa-cog">⠀Settings</SidebarLink>
 
@@ -38,6 +38,7 @@ export default {
   --sidebar-bg-color: #ff6961;
   --sidebar-item-hover: #de3a0b;
   --sidebar-item-active: #ffa07a;
+    
 }
 </style>
 

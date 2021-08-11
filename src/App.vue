@@ -2,8 +2,9 @@
 import Sidebar from "@/components/sidebar/Sidebar";
 import {sidebarWidth} from "@/components/sidebar/state";
 
+
 export default {
-  components: { Sidebar },
+  components: { Sidebar, },
   setup() {
     return { sidebarWidth }
   },
@@ -14,12 +15,11 @@ export default {
 </script>
 
 <template >
+  
   <Sidebar />
     <div>
       <router-view />
     </div>
-
-
 
 </template>
 
@@ -36,10 +36,10 @@ export default {
 
 <style>
 #app {
+  text-align: center;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
@@ -56,9 +56,4 @@ export default {
   color: #42b983;
 }
 
-.isCollapsed{
-  filter: blur(4px);
-
-
-}
 </style>
