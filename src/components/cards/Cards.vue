@@ -15,11 +15,12 @@
 </template>
 
 <script>
+
 export default {
     props: {
        path: String,
        CandyTitle: { required: true , type: String},
-       Price: { required: true , type: Number}
+       Price: { required: true , type: Number},
 
 
     },
